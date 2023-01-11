@@ -103,7 +103,7 @@ Open the index.html file in your Web Browser.
 
 👤 **lenkon**
 
-- GitHub: [@githubhandle](https://github.com/lenkon)
+- GitHub: [@lenkon](https://github.com/lenkon)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
