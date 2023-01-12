@@ -64,6 +64,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://lenkon.github.io/)
+- [Project Presentation Video Link](https://www.loom.com/share/dd0b042569e94d11ac0cb24b3e31e58e)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
