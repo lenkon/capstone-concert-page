@@ -588,12 +588,12 @@ body {
   .artist-sizing {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 0 50%;   
+    flex: 1 0 50%;
   }
-  
+
   .container {
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
     padding: 0 50px;
   }
 }
