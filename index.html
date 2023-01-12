@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="music concert festival">
     <meta name="author" content="Lenkon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">    
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" 
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap">
@@ -16,23 +16,61 @@
 
   <body>
     <!-- Navigation -->
-    <!-- <div class="navbar">
+    <div class="navbar">
       <ul class="navbar-list">
-        <li><a href="#facebook"><div class="facebook-icon"></div></a></li>
-        <li><a href="#twitter"><div class="twitter-icon"></div></a></li>
-        <li class="navbar-text"><a href="#english">English</a></li>
-        <li class="navbar-text"><a href="#english">My Page</a></li>
-        <li class="navbar-text"><a href="#login">Logout</a></li>
+        <li>
+          <a href="#facebook">
+            <div class="facebook-icon">
+              <img src="./images/facebook-icon2.png" alt="facebook icon">
+            </div>
+          </a>
+        </li>        
+        <li>
+          <a href="#twitter">
+            <div class="twitter-icon">
+              <img src="./images/twitter-icon.png" alt="twitter icon">
+            </div>
+          </a>
+        </li>      
+        <li class="navbar-text"><a href="./index.html">English</a></li>
+        <li class="navbar-text"><a href="./index.html">My Page</a></li>
+        <li class="navbar-text"><a href="./index.html">Logout</a></li>
       </ul>
-    </div> -->
+    </div>
+
+    <!-- Main navigation -->
+    <section class="main-navigation">
+      <a class="navbar-icon" href="./index.html">
+        <img src="./images/logo.png" alt="logo icon" class="logo">
+      </a>      
+      <div class="navbar-link-container" id="navbar-link-container">
+        <nav>
+          <a class="navbar-link" href="./about.html">About</a>
+        </nav>
+        <nav>
+          <a class="navbar-link" href="#programs">Program</a>
+        </nav>
+        <nav>
+          <a class="navbar-link" href="#featured">Artists</a>
+        </nav>
+        <nav>
+          <a class="navbar-link" href="#sponsors">Partners</a>
+        </nav>
+        <nav>
+          <a class="navbar-link" href="#programs">News</a>
+        </nav>        
+        <nav>
+          <a class="navbar-link" href="./index.html">
+            <h5 class="event-campaign-text">ICF Event</h5>
+          </a>
+        </nav>
+      </div>
+    </section>
 
     <!-- Mobile menu --> 
-    <header class="header-container">
+    <header id="header-container" class="header-container">
       <div class="nav-container">
         <div class="mobile-menu-container">
-          <!-- <a id="logo" class="logo" href="index.html">
-            <img src="./images/logo.png" alt="logo icon">        
-          </a>           -->
           <nav id="hamburger-menu" class="hamburger-menu">
             <img src="./images/mobile_menu.png" alt="Menu icon">   
           </nav>    
@@ -51,8 +89,31 @@
       </section>
     </header> 
     
-    <main>
-      <section class="programs">
+    <!-- Mobile Menu -->
+    <div id="menu-show" class="menu-container">            
+      <div class="menu-close-container">
+        <span id="menu-close" class="menu-close">              
+          <nav><img src="./images/Close-Icon.png" alt="close menu image" /></nav>              
+        </span>
+      </div>
+      <div class="menu-list">
+        <ul>
+          <li><nav><a class="menu-item" href="./about.html">About</a></nav></li>
+          <li><nav><a class="menu-item" href="#programs">Program</a></nav></li>
+          <li><nav><a class="menu-item" href="#featured">Artists</a></nav></li>
+          <li><nav><a class="menu-item" href="#sponsors">Partners</a></nav></li>
+          <li><nav><a class="menu-item" href="#programs">News</a></nav></li>
+          <li><nav><a class="menu-item" href="./index.html">ICF Event</a></nav></li>
+        </ul>            
+      </div>
+      <div class="base-line">            
+      </div>
+    </div>
+
+    <!-- Main  -->
+    <main id="main">
+      <!-- Programs -->
+      <section id="programs"class="programs">
         <div class="program-container">
           <div class="program-header">
             <h5>Main Program</h5>
@@ -64,9 +125,7 @@
                 <div class="program-card">
                   <img src="./images/introduction.png" alt="introduction program image">
                   <h6 class="program-title">Introduction and Performance</h6>
-                  <p>Listen to our Chairman giving a brief history of the festival and groove to various 
-                    renowned artists from different countries performing live.
-                  </p>
+                  <p>Listen to our Chairman giving a brief history of the festival and groove to the music.</p>
                 </div>
               </div>
 
@@ -74,9 +133,7 @@
                 <div class="program-card">
                   <img src="./images/playfest.png" alt="playfest program image">
                   <h6 class="program-title">PlayFest</h6>
-                  <p>Following the success of previous years PlayFest returns for 2023. A full day of performances split into multiple sessions.
-                    PlayFest continues to go from strength to strength, giving local amateur and professional musicians a platform to perform.
-                  </p>
+                  <p>A full day of performances split into multiple sessions. </p>
                 </div>
               </div>
               
@@ -84,8 +141,7 @@
                 <div class="program-card">
                   <img src="./images/tour.png" alt="tour program image">
                   <h6 class="program-title">Center on Tour</h6>
-                  <p>Transformative performances from the banks of the Hudson and across the globe. The possibility to perform live on a 
-                    magnificent stage in front of an audience and music industry professionals.</p>
+                  <p>Transformative performances from the banks of the Hudson and across the globe.</p>
                 </div>
               </div>
 
@@ -93,9 +149,7 @@
                 <div class="program-card">
                   <img src="images/solo.png" alt="program solo performance image">
                   <h6 class="program-title">Solo Performance</h6>
-                  <p>Live performance by chosen celebrity artists where our judges would nominate the top performers.
-                    The power of music to compel attention and to stir emotions lends an especially fascinating aura.
-                  </p>                  
+                  <p>Live performance by chosen celebrity artists where our judges would nominate the top performers. </p>
                 </div>
               </div>
 
@@ -103,9 +157,7 @@
                 <div class="program-card">
                   <img src="./images/award.jpg" alt="program award ceremony image">
                   <h6 class="program-title">Award Ceremony</h6>
-                  <p>On this closing ceremony awards would be distributed on the closing day of the event to 
-                    those deserving artists on different categories.                    
-                  </p>
+                  <p>Awards would be distributed to those deserving artists on different categories.</p>
                 </div>
               </div>           
               <div class="program-join">
@@ -118,7 +170,7 @@
       </section>
 
       <!-- Artist -->
-      <section class="artists">
+      <section id="featured" class="artists">
         <div class="artist-header">
           <h5>Featured Artists</h5>
         </div>
@@ -198,7 +250,7 @@
 
       <!-- Footer -->
       <footer>
-        <section class="footer-container">
+        <section id="sponsors" class="footer-container">
           <h5 class="mt-5 footer-header">Partner</h4>
           <div class="footer-icon-container">
             <ul class="footer-icon-list">

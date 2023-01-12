@@ -15,13 +15,62 @@
   </head>
 
   <body>
+    <!-- Navigation -->
+    <div class="navbar">
+      <ul class="navbar-list">
+        <li>
+          <a href="#facebook">
+            <div class="facebook-icon">
+              <img src="./images/facebook-icon2.png" alt="facebook icon">
+            </div>
+          </a>
+        </li>        
+        <li>
+          <a href="#twitter">
+            <div class="twitter-icon">
+              <img src="./images/twitter-icon.png" alt="twitter icon">
+            </div>
+          </a>
+        </li>      
+        <li class="navbar-text"><a href="./about.html">English</a></li>
+        <li class="navbar-text"><a href="./about.html">My Page</a></li>
+        <li class="navbar-text"><a href="./index.html">Logout</a></li>
+      </ul>
+    </div>
+
+    <!-- Main navigation -->
+    <section class="main-navigation">
+      <a class="navbar-icon" href="./index.html">
+        <img src="./images/logo.png" alt="logo icon" class="logo">
+      </a>      
+      <div class="navbar-link-container" id="navbar-link-container">
+        <nav>
+          <a class="navbar-link" href="./about.html">About</a>
+        </nav>
+        <nav>
+          <a class="navbar-link" href="./index.html#programs">Program</a>
+        </nav>
+        <nav>
+          <a class="navbar-link" href="./index.html#featured">Artists</a>
+        </nav>
+        <nav>
+          <a class="navbar-link" href="#sponsors">Partners</a>
+        </nav>
+        <nav>
+          <a class="navbar-link" href="./index.html#programs">News</a>
+        </nav>        
+        <nav>
+          <a class="navbar-link" href="./index.html">
+            <h5 class="event-campaign-text">ICF Event</h5>
+          </a>
+        </nav>
+      </div>
+    </section>
+
     <!-- Mobile menu --> 
-    <header class="header-container">
+    <header id="header-container" class="header-container">
       <div class="nav-container">
         <div class="mobile-menu-container">
-          <!-- <a id="logo" class="logo" href="index.html">
-            <img src="./images/logo.png" alt="logo icon">        
-          </a>           -->
           <nav id="hamburger-menu" class="hamburger-menu">
             <img src="./images/mobile_menu.png" alt="Menu icon">   
           </nav>    
@@ -43,7 +92,29 @@
       </section>
     </header> 
 
-    <main>
+    <!-- Mobile Menu -->
+    <div id="menu-show" class="menu-container">            
+      <div class="menu-close-container">
+        <span id="menu-close" class="menu-close">              
+          <nav><img src="./images/Close-Icon.png" alt="close menu image" /></nav>              
+        </span>
+      </div>
+      <div class="menu-list">
+        <ul>
+          <li><nav><a class="menu-item" href="./about.html">About</a></nav></li>
+          <li><nav><a class="menu-item" href="./index.html#programs">Program</a></nav></li>
+          <li><nav><a class="menu-item" href="./index.html#featured">Artists</a></nav></li>
+          <li><nav><a class="menu-item" href="#sponsors">Partners</a></nav></li>
+          <li><nav><a class="menu-item" href="./index.html#programs">News</a></nav></li>
+          <li><nav><a class="menu-item" href="./index.html">ICF Event</a></nav></li>
+        </ul>            
+      </div>
+      <div class="base-line">            
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main id="main">
       <section class="about-logo-section">
         <div class="about-logo-container">
           <p class="about-logo-header">Internationa Concert</br>Festival 2023 Logo</p>
@@ -59,35 +130,30 @@
           <p class="past-events-desc">Take a look at the last two ICF events in Buenos Aires and in Warsaw.</p>
         </div>
         <div class="container pb-3">
-          <div class="events-sizing p-2">
-            <div class="col-lg-6">
-                <div class="col-md-6 events-image event-wrapper">
-                <img  class="card-bg img-fluid" src="./images/music-festival-1.png" alt="music festival image">
-                <div class="event-image-text"></div>
-                <div class="event-content-wrapper">
-                  <h3 class="event-content-header">2013</h3>
-                  <p>ICF event 2014 in Buenos Aires.</p>
-                </div>
-              </div>              
-            </div>
-  
-            <div class="events-item-container">
-              <div class="col-md-6 events-image event-wrapper">
-                <img src="./images/music-festival2.png" alt="music festival image">
-                <div class="event-image-text"></div>
-                <div class="event-content-wrapper">
-                  <h3 class="event-content-header">2011</h3>
-                  <p>ICF event 2014 in Warsaw.</p>
-                </div>
-              </div>              
-            </div>             
+          <div class="event-sizing">            
+            <div class="col-md-6 events-image event-wrapper">
+              <img  class="card-bg img-fluid" src="./images/music-festival-1.png" alt="music festival image">
+              <div class="event-image-text"></div>
+              <div class="event-content-wrapper">
+                <h3 class="event-content-header">2013</h3>
+                <p>ICF event 2013  in Buenos Aires.</p>
+              </div>
+            </div>           
+            <div class="col-md-6 events-image event-wrapper">
+              <img src="./images/music-festival2.png" alt="music festival image">
+              <div class="event-image-text"></div>
+              <div class="event-content-wrapper">
+                <h3 class="event-content-header">2011</h3>
+                <p>ICF event 2011 in Warsaw.</p>
+              </div>
+            </div>         
           </div>          
         </div>
       </section>
 
       <!-- Footer -->
       <footer>
-        <section class="footer-container">
+        <section id="sponsors" class="footer-container">
           <h5 class="mt-5 footer-header">Partner</h4>
           <div class="footer-icon-container">
             <ul class="footer-icon-list">
@@ -105,4 +171,5 @@
         </div>
       </footer>          
     </main>    
+    <script src="./js/script.js"></script>
   </body>
